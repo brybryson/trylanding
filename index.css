@@ -1,0 +1,219 @@
+/* Override Bootstrap styles */
+.navbar  {
+    background-color: #282829 !important; 
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; /* Set default text color */
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 600;
+    line-height: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255) !important; /* Set default text color */
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #637bfd !important; /* Change text color on hover to blue */
+}
+
+/* COLLAPSABLE BUTTON */
+.navbar-toggler {
+    background-color: #c9c9c9 !important; 
+    width: 55px;
+    height: 40px; /* Fixed typo here: "35x" to "35px" */
+    border: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #ffffff !important; 
+    border: none; 
+}
+
+/* Remove border when clicked */
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+body {
+    background-color: #1e1e1f; /* Set background color of the body to green */
+}
+
+.container-2 {
+    font-family: "Inter-Black", Helvetica;
+    display: flex;
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        color: rgb(255, 255, 255) !important; /* Set default text color */
+        font-family: "Inter-Regular", Helvetica;
+        /* font: 50px !important; */
+        font-weight: 300;
+        line-height: 20px;
+        font-size: 18px;
+    }
+    
+    .navbar-brand {
+        color: rgb(255, 255, 255) !important; /* Set default text color */
+        font-family: "Inter-Bold", Helvetica;
+        font-weight: 800;
+        font-size: 25px;
+    }
+}
+
+/* PART OF THE CONTAINER-2 */
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.photo-container {
+    margin-left: 60px; /* Adjust the margin as needed */
+}
+
+.photo-container img {
+    max-width: 85%;
+}
+
+
+
+.content {
+    /* Allow the content to take up remaining space */
+    margin-right: 100px;
+    text-align: justify;
+    font-family: "Inter-Medium", Helvetica;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 90px;
+    color: #637bfd;
+}
+
+
+.socmeds {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+
+.socmed-icon {
+    margin-right: 15px; /* Adjust spacing between icons */
+    justify-content: flex-start;
+    
+}
+
+.socmed-icon img {
+    width: 30px; /* Set the size of the social media icons */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensure the image is round */
+    transition: transform 0.3s, filter 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.socmed-icon:hover img {
+    transform: scale(1.1); /* Scale up the icon on hover */
+    filter: brightness(1500%); /* Increase contrast */
+    box-shadow: 0 0 10px rgba(222, 25, 25, 0.7), 0 0 20px rgba(99, 123, 253, 1); /* Add glow effect */
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    background-color: #282829;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #343333;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn.btn-primary{
+    margin-right: 20px;
+}
+
+.btn:hover {
+    background-color: #282829; 
+    border: none;
+    color: #fff; /* Text color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgb(255, 255, 255); /* Add glow effect */
+    
+   
+}
+
+
+@media (max-width: 991px) {
+    .container-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the items horizontally */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .photo-container {
+        margin-right: 0; /* Reset margin for smaller screens */
+        margin-bottom: 20px; /* Add margin between photo and content */
+    }
+        
+    .photo-container img {
+        max-width: 85%;
+        margin-right: 0; 
+    }
+    
+    .content {
+        text-align: center; /* Center the content on smaller screens */
+        font-family: "Inter-Medium", Helvetica;
+        margin-right: 10px;
+       
+        
+        justify-content: center; /* Center the items horizontally */
+        flex-direction: column;
+       
+    }
+    h5, h6 {
+        font-size: 14px;
+        line-height: 20px;
+        
+    }
+    .h2 {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 10px;
+        color: #637bfd;
+    }
+
+    /* SOCMEDS PART */
+    .socmeds {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        flex-direction: row;
+    }
+    
+
+  
+  
+}
